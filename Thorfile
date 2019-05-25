@@ -15,7 +15,7 @@ module Middleman
     end
 
     def download_assets
-      run 'curl -L https://github.com/EphemeAir/stylesheets/archive/master.zip > stylesheets.zip'
+      run 'curl -L https://github.com/EphemeAir/rails-stylesheets/archive/master.zip > stylesheets.zip'
       run 'unzip stylesheets.zip -d source && rm stylesheets.zip'
       run 'mv source/rails-stylesheets-master source/stylesheets'
       run 'mv source/stylesheets/application.scss source/stylesheets/application.css.scss'
